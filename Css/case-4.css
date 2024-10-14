@@ -1,0 +1,50 @@
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+div{
+    border: rgb(240, 106, 196) 3px solid;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    animation: waterdrop 2s linear infinite 2s;
+}
+
+@keyframes waterdrop {
+    0%{
+    }
+
+    25%{
+      width: 125px;
+      height: 125px;
+      opacity: 0.75;
+    }
+
+    50%{
+      width: 150px;
+      height: 150px;
+      opacity: 0.5;
+    }
+
+    75%{
+      width: 175px;
+      height: 175px;
+      opacity: 0.25;
+    }
+
+    100%{
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+}
